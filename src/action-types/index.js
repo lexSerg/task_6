@@ -1,0 +1,2 @@
+export const INC = 'INC_COUNTER';
+export const ON_PRODUCTS_LOADED = 'ON_PRODUCTS_LOADED';

@@ -1,0 +1,17 @@
+.product-list{
+    border: 1px solid black;
+    display: flex;
+    background-color: antiquewhite;
+    flex-wrap: wrap;
+    margin: 1rem;
+    justify-content: flex-start;
+    padding: 1rem;
+}
+ul li {
+    list-style-type: none;
+}
+h3.products_list_title {
+    width: 100%;
+    padding-left: .5rem;
+    margin:  0 0 .5rem;
+}
