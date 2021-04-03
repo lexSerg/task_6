@@ -1,2 +1,3 @@
 export const INC = 'INC_COUNTER';
 export const ON_PRODUCTS_LOADED = 'ON_PRODUCTS_LOADED';
+export const ON_ITEM_IN_CART_TOGGLE = 'ON_ITEM_IN_CART_TOGGLE';

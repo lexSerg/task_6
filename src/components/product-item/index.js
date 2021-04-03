@@ -1,5 +1,12 @@
-import './index.css'
-const ProductItem  = ({id, title, price, image}) => {
+import './index.css';
+import {useDispatch} from 'react-redux';
+import {onItemInCart} from '../../actions';
+const ProductItem  = ({product, isProductInCart}) => {
+    const {id, title, price, image} = product;
+    const dispatch = useDispatch();
+    const addToCart = (item) => {
+        dispatch(onItemInCart(item));
+    }
     return (
         <div className='product-item'>
             <ul>
@@ -10,6 +17,9 @@ const ProductItem  = ({id, title, price, image}) => {
                     <p>{title}</p>
                 </li>
                 <li>Price: {price}</li>
+                <button onClick={()=> addToCart(product)}>
+                    {isProductInCart ? 'Remove item from cart' : 'Add item to cart'}
+                </button>
             </ul>
         </div>
     )
